@@ -1,2 +1,4 @@
+# Responsive WEB Page Layout
+HTML & CSS ONLY 
 
-# Responsive WEB Page
+Good-looking WEB layout 
