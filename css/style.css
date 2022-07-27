@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+}
+.header{
+    background: url(../img/wheat.jpg) no-repeat;
+    background-size: 35rem;
+    background-color: #FBF9FA;
+    height: 33rem;
+}
+.header__menu{
+    padding: 1rem 2rem 5rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.header__link{
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 7rem;
+}
+.header__content{
+    float: right;
+    font-size: 2rem;
+}
+.header__text{
+    width: 47rem;
+}
+.header__text_compname{
+    color: #e2ba7b;
+}
+
+.header__button {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    border-left: 2px solid #65aa44 ; /* Линия слева от текста */
+    border-right: 2px solid #65aa44 ; /* Линия справа от текста */
+    padding: 0.5rem 2rem;
+    width: 8rem; 
+}
+.header__button a{
+    color: black;
+}
+
+
+.main__block_padding{
+    padding: 1rem 3rem;
+}
+.main__title{
+    font-size: 2rem;
+    font-weight: 600;
+    border-left: 0.5rem solid #65aa44;
+    border-bottom: 0.1rem solid #65aa44;
+    padding: 0 0 0.3rem 0.5rem;
+}
+.main__companies, .main__price, .main__news{
+    background: #FBF9FA;
+}
+.main__company_name{
+    color: #65aa44;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.companies__group{
+    display: flex;
+    justify-content: space-between;
+}
+.main__company{
+    width: 30%;
+}
+.main__text{
+    margin: 1rem 0;
+}
+.service__offers{
+    width: 90%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.service__offer{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.service__offer img{
+    margin-right: 1rem;
+}
+.main__table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.main__table_border{
+    border: 0.1rem solid #e48d00;
+    padding: 0.2rem;
+}
+.main__table th {
+    font-weight: bold;
+}
+.main__offers{margin-left: 1rem;}
+td:first-child {
+    font-weight: bold
+}
+.main__offers li {
+    color:#e48d00;
+}
+  
+.main__offers_textBlack {
+    color:#000000;
+  }
+.main__news_block{
+    display: flex;
+    justify-content: space-between;
+}
+.main__newsblock{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 2rem #D3D3D3;
+    margin: 1rem 0;
+    padding: 1rem 1rem 0rem 1rem;
+}
+.newsblock__title{
+    font-weight: bold;
+}
+.newsblock__data{
+    color: #808080;
+}
+.newsblock__photo{
+    margin-right: 0.5rem;
+    max-width: 8vw;
+    height: 9rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 1rem 2rem;
+}
+
+.footer__social{
+    margin: 1rem 0rem;
+    width: 2rem;
+}
+
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+}
+.footer__socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title{
+    width: 8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.footer__info{
+    display: flex;
+    width: 25%;
+}
+
+.footer__text{
+    margin-left: 1rem;
+    max-width: 12rem;
+}
+
+
+@media screen and (max-width: 991px) {
+    .header__link{
+        max-width: 5rem;
+        font-size: 1.2rem;
+        margin-left: 4rem;
+    }
+    .header__text{
+        width: 35rem;
+    }
+    .service__offers{
+        flex-wrap: wrap;
+    }
+    .service__offer{
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    .main__news_block{
+        flex-direction: column;
+    }
+    .main__newsblock{
+        width: 95%;
+    }
+    .newsblock__photo{
+        margin: 0 1rem 1rem 0;
+        max-width: 18vw;
+        height: 9rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer__socials{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 11%;
+    }
+    .footer__social{
+        width: 1.5rem;
+    }
+    .footer__info{
+        width: 100%;
+    }
+    .footer__title{
+        width: 35%;
+    }
+    .footer__text{
+        max-width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .header__menu{
+        padding: 1rem 1rem 3rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__link{
+        margin: 1rem;
+        padding-bottom: 1rem;
+        flex-wrap: wrap;
+        font-weight: 500;
+        max-width: none;
+        width: 10rem;
+    }
+    .header__text{
+        width: 100%;
+    }
+    .header__content{
+        text-align: center;
+    }
+    .header__button{
+       display: inline-block;
+       left: 50%;
+    }
+    .header__button a{
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .companies__group{
+        flex-direction: column;
+    }
+    .main__company{
+        width: 100%;
+    }
+    .service__offer{
+        width: 100%;
+    }
+    .main__price{
+        display: none;
+    }
+    .main__title{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
